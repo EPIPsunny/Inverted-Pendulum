@@ -1,0 +1,204 @@
+Added Component: Designator=c1(HDR2.54-M-LI-20P)
+Added Component: Designator=c2(HDR2.54-M-LI-20P)
+Added Component: Designator=DC-DC1(DC-DC)
+Added Component: Designator=JP1(HDR2.54-LI-3P)
+Add component (AddParameter): Name = "BOM名称"; Value = "3P接插件"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "封装库来自淘宝卖家ID:黄晶宝石"; Value = "其他店铺购入均为盗版假冒封装库，请立即申请退款，本店现金奖励20~200元"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "联系卖家，免费查找封装"; Value = "唯一出售店铺网址https://shop463601444.taobao.com"; VariantName = "[No Variations]"
+Added Component: Designator=JP2(HDR2.54-LI-20P)
+Add component (AddParameter): Name = "BOM名称"; Value = "20P接插件"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "封装库来自淘宝卖家ID:黄晶宝石"; Value = "其他店铺购入均为盗版假冒封装库，请立即申请退款，本店现金奖励20~200元"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "联系卖家，免费查找封装"; Value = "唯一出售店铺网址https://shop463601444.taobao.com"; VariantName = "[No Variations]"
+Added Component: Designator=JP3(HDR2.54-LI-20P)
+Add component (AddParameter): Name = "BOM名称"; Value = "20P接插件"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "封装库来自淘宝卖家ID:黄晶宝石"; Value = "其他店铺购入均为盗版假冒封装库，请立即申请退款，本店现金奖励20~200元"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "联系卖家，免费查找封装"; Value = "唯一出售店铺网址https://shop463601444.taobao.com"; VariantName = "[No Variations]"
+Added Component: Designator=JP4(HDR2.54-LI-4P)
+Add component (AddParameter): Name = "BOM名称"; Value = "4P接插件"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "封装库来自淘宝卖家ID:黄晶宝石"; Value = "其他店铺购入均为盗版假冒封装库，请立即申请退款，本店现金奖励20~200元"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "联系卖家，免费查找封装"; Value = "唯一出售店铺网址https://shop463601444.taobao.com"; VariantName = "[No Variations]"
+Added Component: Designator=motor-L1(HDR2.54-WI-6P)
+Added Component: Designator=motor-R2(HDR2.54-WI-6P)
+Added Component: Designator=oled1(HDR2.54-M-LI-7P)
+Added Component: Designator=POWER-1(HDR2.54-LI-2P)
+Added Component: Designator=tb1(HDR2.54-M-LI-8P)
+Added Component: Designator=tb2(HDR2.54-M-LI-8P)
+Added Component: Designator=UART1(HDR2.54-M-LI-4P)
+Added Pin To Net: NetName=5V Pin=c1-18
+Added Pin To Net: NetName=5V Pin=DC-DC1-3
+Added Pin To Net: NetName=5V Pin=JP2-18
+Added Pin To Net: NetName=5V Pin=JP4-1
+Added Pin To Net: NetName=5V Pin=motor-L1-5
+Added Pin To Net: NetName=5V Pin=motor-R2-5
+Added Pin To Net: NetName=5V Pin=oled1-2
+Added Pin To Net: NetName=5V Pin=tb1-2
+Added Pin To Net: NetName=5V Pin=tb2-4
+Added Pin To Net: NetName=5V Pin=UART1-1
+Added Net: Name=5V
+Added Pin To Net: NetName=7.4V Pin=DC-DC1-1
+Added Pin To Net: NetName=7.4V Pin=POWER-1-1
+Added Pin To Net: NetName=7.4V Pin=tb1-1
+Added Net: Name=7.4V
+Added Pin To Net: NetName=A0 Pin=c2-16
+Added Pin To Net: NetName=A0 Pin=JP3-16
+Added Pin To Net: NetName=A0 Pin=motor-L1-3
+Added Net: Name=A0
+Added Pin To Net: NetName=A1 Pin=c2-15
+Added Pin To Net: NetName=A1 Pin=JP3-15
+Added Pin To Net: NetName=A1 Pin=motor-L1-4
+Added Net: Name=A1
+Added Pin To Net: NetName=A2 Pin=c2-14
+Added Pin To Net: NetName=A2 Pin=JP1-3
+Added Pin To Net: NetName=A2 Pin=JP3-14
+Added Net: Name=A2
+Added Pin To Net: NetName=A3 Pin=c2-13
+Added Pin To Net: NetName=A3 Pin=JP3-13
+Added Net: Name=A3
+Added Pin To Net: NetName=A4 Pin=c2-12
+Added Pin To Net: NetName=A4 Pin=JP3-12
+Added Pin To Net: NetName=A4 Pin=oled1-7
+Added Net: Name=A4
+Added Pin To Net: NetName=A5 Pin=c2-11
+Added Pin To Net: NetName=A5 Pin=JP3-11
+Added Pin To Net: NetName=A5 Pin=oled1-3
+Added Net: Name=A5
+Added Pin To Net: NetName=A6 Pin=c2-10
+Added Pin To Net: NetName=A6 Pin=JP3-10
+Added Net: Name=A6
+Added Pin To Net: NetName=A7 Pin=c2-9
+Added Pin To Net: NetName=A7 Pin=JP3-9
+Added Pin To Net: NetName=A7 Pin=oled1-4
+Added Net: Name=A7
+Added Pin To Net: NetName=A8 Pin=c1-5
+Added Pin To Net: NetName=A8 Pin=JP2-5
+Added Pin To Net: NetName=A8 Pin=tb2-1
+Added Net: Name=A8
+Added Pin To Net: NetName=A9 Pin=c1-6
+Added Pin To Net: NetName=A9 Pin=JP2-6
+Added Pin To Net: NetName=A9 Pin=JP4-4
+Added Pin To Net: NetName=A9 Pin=UART1-4
+Added Net: Name=A9
+Added Pin To Net: NetName=A10 Pin=c1-7
+Added Pin To Net: NetName=A10 Pin=JP2-7
+Added Pin To Net: NetName=A10 Pin=JP4-3
+Added Pin To Net: NetName=A10 Pin=UART1-3
+Added Net: Name=A10
+Added Pin To Net: NetName=A11 Pin=c1-8
+Added Pin To Net: NetName=A11 Pin=JP2-8
+Added Pin To Net: NetName=A11 Pin=tb2-7
+Added Net: Name=A11
+Added Pin To Net: NetName=A12 Pin=c1-9
+Added Pin To Net: NetName=A12 Pin=JP2-9
+Added Net: Name=A12
+Added Pin To Net: NetName=A15 Pin=c1-10
+Added Pin To Net: NetName=A15 Pin=JP2-10
+Added Net: Name=A15
+Added Pin To Net: NetName=B0 Pin=c2-8
+Added Pin To Net: NetName=B0 Pin=JP3-8
+Added Pin To Net: NetName=B0 Pin=oled1-5
+Added Net: Name=B0
+Added Pin To Net: NetName=B1 Pin=c2-7
+Added Pin To Net: NetName=B1 Pin=JP3-7
+Added Pin To Net: NetName=B1 Pin=oled1-6
+Added Net: Name=B1
+Added Pin To Net: NetName=B3 Pin=c1-11
+Added Pin To Net: NetName=B3 Pin=JP2-11
+Added Net: Name=B3
+Added Pin To Net: NetName=B4 Pin=c1-12
+Added Pin To Net: NetName=B4 Pin=JP2-12
+Added Net: Name=B4
+Added Pin To Net: NetName=B5 Pin=c1-13
+Added Pin To Net: NetName=B5 Pin=JP2-13
+Added Net: Name=B5
+Added Pin To Net: NetName=B6 Pin=c1-14
+Added Pin To Net: NetName=B6 Pin=JP2-14
+Added Pin To Net: NetName=B6 Pin=motor-R2-3
+Added Net: Name=B6
+Added Pin To Net: NetName=B7 Pin=c1-15
+Added Pin To Net: NetName=B7 Pin=JP2-15
+Added Pin To Net: NetName=B7 Pin=motor-R2-4
+Added Net: Name=B7
+Added Pin To Net: NetName=B8 Pin=c1-16
+Added Pin To Net: NetName=B8 Pin=JP2-16
+Added Net: Name=B8
+Added Pin To Net: NetName=B9 Pin=c1-17
+Added Pin To Net: NetName=B9 Pin=JP2-17
+Added Net: Name=B9
+Added Pin To Net: NetName=B10 Pin=c2-6
+Added Pin To Net: NetName=B10 Pin=JP3-6
+Added Net: Name=B10
+Added Pin To Net: NetName=B11 Pin=c2-5
+Added Pin To Net: NetName=B11 Pin=JP3-5
+Added Net: Name=B11
+Added Pin To Net: NetName=B12 Pin=c1-1
+Added Pin To Net: NetName=B12 Pin=JP2-1
+Added Pin To Net: NetName=B12 Pin=tb2-3
+Added Net: Name=B12
+Added Pin To Net: NetName=B13 Pin=c1-2
+Added Pin To Net: NetName=B13 Pin=JP2-2
+Added Pin To Net: NetName=B13 Pin=tb2-2
+Added Net: Name=B13
+Added Pin To Net: NetName=B14 Pin=c1-3
+Added Pin To Net: NetName=B14 Pin=JP2-3
+Added Pin To Net: NetName=B14 Pin=tb2-5
+Added Net: Name=B14
+Added Pin To Net: NetName=B15 Pin=c1-4
+Added Pin To Net: NetName=B15 Pin=JP2-4
+Added Pin To Net: NetName=B15 Pin=tb2-6
+Added Net: Name=B15
+Added Pin To Net: NetName=C13 Pin=c2-19
+Added Pin To Net: NetName=C13 Pin=JP3-19
+Added Net: Name=C13
+Added Pin To Net: NetName=C14 Pin=c2-18
+Added Pin To Net: NetName=C14 Pin=JP3-18
+Added Net: Name=C14
+Added Pin To Net: NetName=C15 Pin=c2-17
+Added Pin To Net: NetName=C15 Pin=JP3-17
+Added Net: Name=C15
+Added Pin To Net: NetName=GND7.4V Pin=DC-DC1-2
+Added Pin To Net: NetName=GND7.4V Pin=POWER-1-2
+Added Net: Name=GND7.4V
+Added Pin To Net: NetName=GND Pin=c2-1
+Added Pin To Net: NetName=GND Pin=c2-2
+Added Pin To Net: NetName=GND Pin=DC-DC1-4
+Added Pin To Net: NetName=GND Pin=JP3-1
+Added Pin To Net: NetName=GND Pin=JP3-2
+Added Pin To Net: NetName=GND Pin=JP4-2
+Added Pin To Net: NetName=GND Pin=motor-L1-2
+Added Pin To Net: NetName=GND Pin=motor-R2-2
+Added Pin To Net: NetName=GND Pin=oled1-1
+Added Pin To Net: NetName=GND Pin=tb1-3
+Added Pin To Net: NetName=GND Pin=tb1-8
+Added Pin To Net: NetName=GND Pin=tb2-8
+Added Pin To Net: NetName=GND Pin=UART1-2
+Added Net: Name=GND
+Added Pin To Net: NetName=ML+ Pin=motor-L1-1
+Added Pin To Net: NetName=ML+ Pin=tb1-4
+Added Net: Name=ML+
+Added Pin To Net: NetName=ML- Pin=motor-L1-6
+Added Pin To Net: NetName=ML- Pin=tb1-5
+Added Net: Name=ML-
+Added Pin To Net: NetName=MR+ Pin=motor-R2-1
+Added Pin To Net: NetName=MR+ Pin=tb1-6
+Added Net: Name=MR+
+Added Pin To Net: NetName=MR- Pin=motor-R2-6
+Added Pin To Net: NetName=MR- Pin=tb1-7
+Added Net: Name=MR-
+Added Pin To Net: NetName=PIN3.3V Pin=c1-20
+Added Pin To Net: NetName=PIN3.3V Pin=c2-3
+Added Pin To Net: NetName=PIN3.3V Pin=JP1-1
+Added Pin To Net: NetName=PIN3.3V Pin=JP2-20
+Added Pin To Net: NetName=PIN3.3V Pin=JP3-3
+Added Net: Name=PIN3.3V
+Added Pin To Net: NetName=PINGND Pin=c1-19
+Added Pin To Net: NetName=PINGND Pin=JP1-2
+Added Pin To Net: NetName=PINGND Pin=JP2-19
+Added Net: Name=PINGND
+Added Pin To Net: NetName=R Pin=c2-4
+Added Pin To Net: NetName=R Pin=JP3-4
+Added Net: Name=R
+Added Pin To Net: NetName=VB Pin=c2-20
+Added Pin To Net: NetName=VB Pin=JP3-20
+Added Net: Name=VB
+Added Class: Name=倒立摆原理图
+Added Room: Name=倒立摆原理图

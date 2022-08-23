@@ -1,0 +1,245 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 { 
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body { 
+			font-family : segoe ui;
+		}
+
+		td, th {  
+			padding: 0.5em;
+			text-align : left;
+		}
+		th { 
+			background-color : #EEEEEE;
+		
+		}
+		th.column1, td.column1 { 
+			width : 50%; 
+		}
+
+        th.column2, td.column2 {
+            width : 25%;
+        }
+
+		table { 
+			width : 100%; 
+            font-size: 0.9em;
+		}
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 5em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error { 
+			color : red;
+			font-weight : bold;
+		}	
+		tr.onmouseout_odd { 
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+			
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);		
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {	
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}	
+	</script><title>Move Component(s) Origin to Grid</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD20\Templates\AD_logo.png
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>Move Component(s) Origin to Grid</h1>
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2022/3/29</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">22:37:06</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\yuyixiao\Desktop\%E6%A0%A1%E8%B5%9B%E5%80%92%E7%AB%8B%E6%91%86\%E5%80%92%E7%AB%8B%E6%91%86%E7%94%B5%E8%B7%AF%E6%9D%BF\PCB_Project\%E5%80%92%E7%AB%8B%E6%91%86pcb.PcbDoc" class="file"><acronym title="C:\Users\yuyixiao\Desktop\校赛倒立摆\倒立摆电路板\PCB_Project\倒立摆pcb.PcbDoc">C:\Users\yuyixiao\Desktop\校赛倒立摆\倒立摆电路板\PCB_Project\倒立摆pcb.PcbDoc</acronym></a></td>
+</tr>
+</table><a name="IDAKAV23QXKCLKLOLVJU31LEONKCFI5JCM15KIVCGU5QUE4ZTOFGZC"><h2>Components Origin</h2></a><a name="IDYP45KVP1JSI2OJGJB1G1PBNQAPDJU5NIYWH54QEI1VKYAFBOBKLO"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="warning"></th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\%E6%A0%A1%E8%B5%9B%E5%80%92%E7%AB%8B%E6%91%86\%E5%80%92%E7%AB%8B%E6%91%86%E7%94%B5%E8%B7%AF%E6%9D%BF\PCB_Project\%E5%80%92%E7%AB%8B%E6%91%86pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6131mil|Location2.X=6538.937mil|Location1.Y=4191.063mil|Location2.Y=4398.981mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\校赛倒立摆\倒立摆电路板\PCB_Project\倒立摆pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6131mil|Location2.X=6538.937mil|Location1.Y=4191.063mil|Location2.Y=4398.981mil|Absolute=True">SIP Component UART1-UART (6335mil,4245mil) on Top Layer</acronym></a> - Component origin is already ON grid.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\%E6%A0%A1%E8%B5%9B%E5%80%92%E7%AB%8B%E6%91%86\%E5%80%92%E7%AB%8B%E6%91%86%E7%94%B5%E8%B7%AF%E6%9D%BF\PCB_Project\%E5%80%92%E7%AB%8B%E6%91%86pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3766mil|Location2.X=3935.952mil|Location1.Y=1256.063mil|Location2.Y=2163.981mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\校赛倒立摆\倒立摆电路板\PCB_Project\倒立摆pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3766mil|Location2.X=3935.952mil|Location1.Y=1256.063mil|Location2.Y=2163.981mil|Absolute=True">SIP Component tb2-tb6612-R (3820mil,1660mil) on Top Layer</acronym></a> - Component origin is already ON grid.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\%E6%A0%A1%E8%B5%9B%E5%80%92%E7%AB%8B%E6%91%86\%E5%80%92%E7%AB%8B%E6%91%86%E7%94%B5%E8%B7%AF%E6%9D%BF\PCB_Project\%E5%80%92%E7%AB%8B%E6%91%86pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3116.394mil|Location2.X=3266.352mil|Location1.Y=1256.063mil|Location2.Y=2163.981mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\校赛倒立摆\倒立摆电路板\PCB_Project\倒立摆pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3116.394mil|Location2.X=3266.352mil|Location1.Y=1256.063mil|Location2.Y=2163.981mil|Absolute=True">SIP Component tb1-tb6612-L (3170.394mil,1660mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\%E6%A0%A1%E8%B5%9B%E5%80%92%E7%AB%8B%E6%91%86\%E5%80%92%E7%AB%8B%E6%91%86%E7%94%B5%E8%B7%AF%E6%9D%BF\PCB_Project\%E5%80%92%E7%AB%8B%E6%91%86pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3446.063mil|Location2.X=3653.937mil|Location1.Y=4631.063mil|Location2.Y=4738.937mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\校赛倒立摆\倒立摆电路板\PCB_Project\倒立摆pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3446.063mil|Location2.X=3653.937mil|Location1.Y=4631.063mil|Location2.Y=4738.937mil|Absolute=True">Small Component POWER-1-POWER-7.4V (3550mil,4685mil) on Top Layer</acronym></a> - Component origin is already ON grid.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\%E6%A0%A1%E8%B5%9B%E5%80%92%E7%AB%8B%E6%91%86\%E5%80%92%E7%AB%8B%E6%91%86%E7%94%B5%E8%B7%AF%E6%9D%BF\PCB_Project\%E5%80%92%E7%AB%8B%E6%91%86pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5736mil|Location2.X=6443.937mil|Location1.Y=2066.063mil|Location2.Y=2273.981mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\校赛倒立摆\倒立摆电路板\PCB_Project\倒立摆pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5736mil|Location2.X=6443.937mil|Location1.Y=2066.063mil|Location2.Y=2273.981mil|Absolute=True">SIP Component oled1-oled (6090mil,2120mil) on Top Layer</acronym></a> - Component origin is already ON grid.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\%E6%A0%A1%E8%B5%9B%E5%80%92%E7%AB%8B%E6%91%86\%E5%80%92%E7%AB%8B%E6%91%86%E7%94%B5%E8%B7%AF%E6%9D%BF\PCB_Project\%E5%80%92%E7%AB%8B%E6%91%86pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4806mil|Location2.X=5413.937mil|Location1.Y=1015.737mil|Location2.Y=1474.981mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\校赛倒立摆\倒立摆电路板\PCB_Project\倒立摆pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4806mil|Location2.X=5413.937mil|Location1.Y=1015.737mil|Location2.Y=1474.981mil|Absolute=True">SIP Component motor-R2-motor-R (5110mil,1325mil) on Top Layer</acronym></a> - Component origin is already ON grid.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\%E6%A0%A1%E8%B5%9B%E5%80%92%E7%AB%8B%E6%91%86\%E5%80%92%E7%AB%8B%E6%91%86%E7%94%B5%E8%B7%AF%E6%9D%BF\PCB_Project\%E5%80%92%E7%AB%8B%E6%91%86pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4046mil|Location2.X=4653.937mil|Location1.Y=1015.737mil|Location2.Y=1474.981mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\校赛倒立摆\倒立摆电路板\PCB_Project\倒立摆pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4046mil|Location2.X=4653.937mil|Location1.Y=1015.737mil|Location2.Y=1474.981mil|Absolute=True">SIP Component motor-L1-motor-L (4350mil,1325mil) on Top Layer</acronym></a> - Component origin is already ON grid.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\%E6%A0%A1%E8%B5%9B%E5%80%92%E7%AB%8B%E6%91%86\%E5%80%92%E7%AB%8B%E6%91%86%E7%94%B5%E8%B7%AF%E6%9D%BF\PCB_Project\%E5%80%92%E7%AB%8B%E6%91%86pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6131mil|Location2.X=6538.937mil|Location1.Y=4396.063mil|Location2.Y=4603.981mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\校赛倒立摆\倒立摆电路板\PCB_Project\倒立摆pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6131mil|Location2.X=6538.937mil|Location1.Y=4396.063mil|Location2.Y=4603.981mil|Absolute=True">SIP Component JP4-HDR-1X4 (6335mil,4450mil) on Top Layer</acronym></a> - Component origin is already ON grid.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\%E6%A0%A1%E8%B5%9B%E5%80%92%E7%AB%8B%E6%91%86\%E5%80%92%E7%AB%8B%E6%91%86%E7%94%B5%E8%B7%AF%E6%9D%BF\PCB_Project\%E5%80%92%E7%AB%8B%E6%91%86pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5811mil|Location2.X=5990.948mil|Location1.Y=2491.063mil|Location2.Y=4598.981mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\校赛倒立摆\倒立摆电路板\PCB_Project\倒立摆pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5811mil|Location2.X=5990.948mil|Location1.Y=2491.063mil|Location2.Y=4598.981mil|Absolute=True">SIP Component JP3-HDR-1X20 (5865mil,3495mil) on Top Layer</acronym></a> - Component origin is already ON grid.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\%E6%A0%A1%E8%B5%9B%E5%80%92%E7%AB%8B%E6%91%86\%E5%80%92%E7%AB%8B%E6%91%86%E7%94%B5%E8%B7%AF%E6%9D%BF\PCB_Project\%E5%80%92%E7%AB%8B%E6%91%86pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4391mil|Location2.X=4570.948mil|Location1.Y=2491.063mil|Location2.Y=4598.981mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\校赛倒立摆\倒立摆电路板\PCB_Project\倒立摆pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4391mil|Location2.X=4570.948mil|Location1.Y=2491.063mil|Location2.Y=4598.981mil|Absolute=True">SIP Component JP2-HDR-1X20 (4445mil,3495mil) on Top Layer</acronym></a> - Component origin is already ON grid.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\%E6%A0%A1%E8%B5%9B%E5%80%92%E7%AB%8B%E6%91%86\%E5%80%92%E7%AB%8B%E6%91%86%E7%94%B5%E8%B7%AF%E6%9D%BF\PCB_Project\%E5%80%92%E7%AB%8B%E6%91%86pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6171mil|Location2.X=6478.937mil|Location1.Y=2796.063mil|Location2.Y=3003.981mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\校赛倒立摆\倒立摆电路板\PCB_Project\倒立摆pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6171mil|Location2.X=6478.937mil|Location1.Y=2796.063mil|Location2.Y=3003.981mil|Absolute=True">Small Component JP1-HDR-1X3 (6325mil,2850mil) on Top Layer</acronym></a> - Component origin is already ON grid.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\%E6%A0%A1%E8%B5%9B%E5%80%92%E7%AB%8B%E6%91%86\%E5%80%92%E7%AB%8B%E6%91%86%E7%94%B5%E8%B7%AF%E6%9D%BF\PCB_Project\%E5%80%92%E7%AB%8B%E6%91%86pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3105mil|Location2.X=3990mil|Location1.Y=2515mil|Location2.Y=4315mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\校赛倒立摆\倒立摆电路板\PCB_Project\倒立摆pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3105mil|Location2.X=3990mil|Location1.Y=2515mil|Location2.Y=4315mil|Absolute=True">Component DC-DC1-DC-DC (3900mil,4225mil) on Top Layer</acronym></a> - Component origin is already ON grid. - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\%E6%A0%A1%E8%B5%9B%E5%80%92%E7%AB%8B%E6%91%86\%E5%80%92%E7%AB%8B%E6%91%86%E7%94%B5%E8%B7%AF%E6%9D%BF\PCB_Project\%E5%80%92%E7%AB%8B%E6%91%86pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5401mil|Location2.X=5520.968mil|Location1.Y=2491.063mil|Location2.Y=4598.981mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\校赛倒立摆\倒立摆电路板\PCB_Project\倒立摆pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5401mil|Location2.X=5520.968mil|Location1.Y=2491.063mil|Location2.Y=4598.981mil|Absolute=True">SIP Component c2-c8t6-R (5455mil,3495mil) on Top Layer</acronym></a> - Component origin is already ON grid.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\%E6%A0%A1%E8%B5%9B%E5%80%92%E7%AB%8B%E6%91%86\%E5%80%92%E7%AB%8B%E6%91%86%E7%94%B5%E8%B7%AF%E6%9D%BF\PCB_Project\%E5%80%92%E7%AB%8B%E6%91%86pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4801mil|Location2.X=4908.937mil|Location1.Y=2491.063mil|Location2.Y=4598.981mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\yuyixiao\Desktop\校赛倒立摆\倒立摆电路板\PCB_Project\倒立摆pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4801mil|Location2.X=4908.937mil|Location1.Y=2491.063mil|Location2.Y=4598.981mil|Absolute=True">SIP Component c1-c8t6-L (4855mil,3495mil) on Top Layer</acronym></a> - Component origin is already ON grid.</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

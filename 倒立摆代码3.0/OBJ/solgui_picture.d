@@ -1,0 +1,13 @@
+..\obj\solgui_picture.o: ..\MKFILE\SOLGUI\SOLGUI_Picture.c
+..\obj\solgui_picture.o: ..\MKFILE\SOLGUI\SOLGUI_Include.h
+..\obj\solgui_picture.o: ..\MKFILE\SOLGUI\SOLGUI_Type.h
+..\obj\solgui_picture.o: D:\32software\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\solgui_picture.o: ..\MKFILE\SOLGUI\SOLGUI_Config.h
+..\obj\solgui_picture.o: ..\MKFILE\SOLGUI\SOLGUI_Hardware.h
+..\obj\solgui_picture.o: ..\MKFILE\SOLGUI\SOLGUI_Common.h
+..\obj\solgui_picture.o: ..\MKFILE\SOLGUI\SOLGUI_Menu.h
+..\obj\solgui_picture.o: ..\MKFILE\SOLGUI\SOLGUI_Printf.h
+..\obj\solgui_picture.o: D:\32software\MDK5\ARM\ARMCC\Bin\..\include\stdarg.h
+..\obj\solgui_picture.o: ..\MKFILE\SOLGUI\SOLGUI_GBasic.h
+..\obj\solgui_picture.o: ..\MKFILE\SOLGUI\SOLGUI_Picture.h
+..\obj\solgui_picture.o: ..\MKFILE\SOLGUI\SOLGUI_Widget.h

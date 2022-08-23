@@ -1,0 +1,22 @@
+Move Component(s) Origin to Grid
+Filename     : C:\Users\yuyixiao\Desktop\校赛倒立摆\倒立摆电路板\PCB_Project\倒立摆pcb.PcbDoc
+Date         : 2022/3/29
+Time         : 22:37:06
+Time Elapsed : 00:00:00
+
+
+    SIP Component UART1-UART (6335mil,4245mil) on Top Layer - Component origin is already ON grid.
+    SIP Component tb2-tb6612-R (3820mil,1660mil) on Top Layer - Component origin is already ON grid.
+    SIP Component tb1-tb6612-L (3170.394mil,1660mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component POWER-1-POWER-7.4V (3550mil,4685mil) on Top Layer - Component origin is already ON grid.
+    SIP Component oled1-oled (6090mil,2120mil) on Top Layer - Component origin is already ON grid.
+    SIP Component motor-R2-motor-R (5110mil,1325mil) on Top Layer - Component origin is already ON grid.
+    SIP Component motor-L1-motor-L (4350mil,1325mil) on Top Layer - Component origin is already ON grid.
+    SIP Component JP4-HDR-1X4 (6335mil,4450mil) on Top Layer - Component origin is already ON grid.
+    SIP Component JP3-HDR-1X20 (5865mil,3495mil) on Top Layer - Component origin is already ON grid.
+    SIP Component JP2-HDR-1X20 (4445mil,3495mil) on Top Layer - Component origin is already ON grid.
+    Small Component JP1-HDR-1X3 (6325mil,2850mil) on Top Layer - Component origin is already ON grid.
+    Component DC-DC1-DC-DC (3900mil,4225mil) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SIP Component c2-c8t6-R (5455mil,3495mil) on Top Layer - Component origin is already ON grid.
+    SIP Component c1-c8t6-L (4855mil,3495mil) on Top Layer - Component origin is already ON grid.
+count : 14
